@@ -32,7 +32,7 @@ exports.add = (req, res) => {
    // User the connection
       db.query('INSERT INTO contactform SET username = ?, email = ?, phonenumber = ?, meetingtime = ?,message = ?', [username,email,phonenumber,meetingtime,message], (err,msg) => {
         if (!err) {
-          res.render('index',{
+          res.render('contact',{
             message: "User Data Has Been Sent.",
             messagetype:"good"
         });
