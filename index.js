@@ -35,9 +35,6 @@ hbs.registerPartials(partialspath);
 
 app.use('/',require('./webpage/page'))
 
-// Redirect to Folder router file auth.js module . exports
-// app.use("/auth",require("./data/form"))  
-
 app.listen(port,()=>{
     console.log('Server is listening Port : ' +`${port}`);
 })  
